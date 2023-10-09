@@ -249,7 +249,7 @@ content:
         title: Regular
         description: | # this will include new lines to allow paragraphs
           - Mar 2006 – Feb 2011 : M.S. in Computer Science, Yonsei University Graduate School (Visual Communication)
-            * Leave of absence due to military service (Mar 2006 - Feb 2009)
+            * Mar 2006 - Feb 2009 : Leave of absence due to military service 
           - Mar 2002 – Feb 2006 : B.A. in Computer Engineering, Yonsei University Wonju Campus
           - Mar 1999 – Feb 2002 : Graduated Wonju High Scool
 
@@ -275,7 +275,7 @@ content:
         title: Military Service
         description: | # this will include new lines to allow paragraphs
           - Aug 07 2014 : Promoted to a Reserve Captain, ROK Army (Reserve Officer Promotion System)
-          - Mar 31 2006 - Jun 30 2008 : Discharged as a First Lieutenant, ROK Army (ROTC 44th)
+          - Mar 01 2006 - Jun 30 2008 : Discharged as a First Lieutenant, ROK Army (ROTC 44th)
 
       - layout: top-middle
         title: Architecture
