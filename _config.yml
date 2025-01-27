@@ -48,20 +48,35 @@ linkedin_username: sangwoo-shim
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am a data engineer with 6 years of experience developing **ETL batch pipelines**. I started my career in **malware incident response** and have 8 years of experience, and have also worked as an **evangelist** for incident prevention.
-  Currently, I am leading a project to leverage underserved data by **building a big data platform** for the response team. I want to experience various data and technologies through **immersion and growth**.
-
+  I am a <mark>data engineer</mark> with experience in developing ETL batch pipelines based on <mark>Spark, Hadoop, and AirFlow</mark>. I started my career in 2010 by <mark>responding to malware incidents</mark> and have 8 years of experience. I also worked as an <mark>evangelist</mark> for incident prevention. I contributed to the development of an ETL pipeline for antivirus products that collected data from **25 million** active endpoints, which supported AI model training and product application. Additionally, I led the development of an automation project for discovering neglected data and ETL pipelines for the incident response team's big data platform.
+  Currently, I am responsible for the service development, operation, and maintenance of an ETL pipeline platform that collects and transforms data required for analysis and utilization in gaming services. I also believe that big data technology should be accessible to everyone, so I share methods for building and integrating these technologies on my personal blog.
+  Through defining and solving problems on my own, I have experienced **immersion and growth**. I pursue work efficiency improvements through automation of repetitive tasks and process optimization. Having started later in my career, I am determined to experience various data and technologies more intensely and aim to grow into a technical leader in the field of data engineering.
 content:
   # Experience Section
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: NC Soft
+        link: https://www.ncsoft.com
+        link_text: www.ncsoft.com
+        sub_title: Data Engineer<br>Back-end & Front-end Developer
+        caption: Jan 2024 - Present
+        #quote: >
+        #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+          ## Data Engineering Team (2024.01 ~ Present)
+          **Senior Developer (Data Engineer)** <br>
+          Development, operation, and maintenance of an ETL platform that collects and transforms database data loaded in game services
+          -  Management and operation of the ETL process that collects and transforms game database data
+          - Development of a data transformation service based on Spring Boot, Vue.js 3, Zeppelin, and Spark
+
+      - layout: left
         title: AhnLab
         link: https://www.ahnlab.com
         link_text: www.ahnlab.com
         sub_title: Data Engineer<br>Senior Analyst
-        caption: Nov 2010 - Present
+        caption: Nov 2010 - Jan 2024
         #quote: >
         #  Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
@@ -92,6 +107,30 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
+        title: Development of a notebook-based interactive service for data transformation and analysis, and integration with the ETL platform
+        # link: github.com/sproogen
+        # link_text: Project Website
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/sproogen/modern-resume-theme
+        #  - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #    icon: fab fa-github
+        #    url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        caption:
+          Project Leader (1 in total) / Responsible for planning, design, implementation, development, and operations.
+        quote: >
+          <span style="font-size:125%">2024.05 - Present / Data Engineering Team</span>
+        description: | # this will include new lines to allow paragraphs
+          New development of a batch-based service based on Livy into an **interactive service based on Zeppelin**
+          - H/A configuration of the Zeppelin service, building a token-based authentication system using Nginx
+          - Management of Zeppelin notebooks, design and development of a Vue.js 3-based UI integrated with the ETL platform backend
+          - Development of a Spring Boot-based backend service for integrating and managing Zeppelin, UI, and the ETL platform
+
+          Used Skills
+          <mark>Spring Boot</mark>, <mark>Vue.js 3</mark>, <mark>Zeppelin</mark>, <mark>Spark</mark>, <mark>Java</mark>, <mark>Javascript</mark>, <mark>Scala</mark>
+
+      - layout: top-middle
         title: Leading the development of ransomware incident statistics site crawling
         # link: github.com/sproogen
         # link_text: Project Website
@@ -103,83 +142,133 @@ content:
         #    icon: fab fa-github
         #    url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         caption:
-          Project Leader
+          Project Leaders (2 in total) / Responsible for planning, design, implementation, code review, and mentoring
         quote: >
           <span style="font-size:125%">Mar 2023 - Oct 2023 (7 months) / Response Team</span>
         description: | # this will include new lines to allow paragraphs
           **100% automation** to generate statistics and mailing for ransomware incident status of manual-based
-          
-          Used Skills    
+          - Documenting architecture design, implementation, integration, and automation methods
+          - Leading the development of a CLI-based client tool for collecting statistical information
+          - Leading the development of visualization of weekly and monthly statistics and the regular mailing functionality
+
+          Used Skills
           <mark>AirFlow</mark>, <mark>PostgreSQL</mark>, <mark>Superset</mark>, <mark>Python</mark>, <mark>Selenium</mark>, <mark>BeautifulSoup</mark>
 
       - layout: top-middle
         title: Leading the construction of a big data processing platform for the incident response department
         caption:
-          Project Leader and Data Engineer
+          Project Leaders and Data Engineers (3 in total) / Responsible for planning, design, implementation, development, and operations
         quote: >
           <span style="font-size:125%">Jan 2023 - Sep 2023 (9 months) / Response Team</span>
         description: | # this will include new lines to allow paragraphs
-          **Reduce processing time by 90%** through building a Hadoop platform, configuring an AirFlow pipeline, and developing automation
+          **Building a big data platform** capable of processing large volumes of antivirus reports and EDR event logs that rely on manual work
+          - Responsible for platform construction, CLI-based client tool, and pipeline **automation development**
+          - **Reduced** data processing time of existing reports by **90%** (based on PoC)
+          - Documented architecture design, implementation, integration, and automation methods to share learning and growth experiences
+          - Enabled non-development departments to secure their **own automation capabilities and big data processing environment**
 
-          Used Skills    
+          Used Skills
           <mark>Hadoop</mark>, <mark>Spark</mark>, <mark>Ambari</mark>, <mark>AirFlow</mark>, <mark>Livy</mark>, <mark>Bigtop</mark>, <mark>MinIO</mark>, <mark>Docker</mark>, <mark>VirtualBox</mark>, <mark>Linux</mark>, <mark>Scala</mark>, <mark>Python</mark>
 
           ![hadoop](./images/hadoop.png)
 
       - layout: top-middle
-        title: Leading the development of automatic collection of malware and report disclosure sites
+        title: Establishing a Basic Framework for Project Management and Progress (Making High Performers)
         caption:
-          Project Leader and Data Engineer
+          Project Leaders (2 in total) / Responsible for planning and operations
         quote: >
-          <span style="font-size:125%">May 2022 - Dec 2022 (8 months) / Response Team</span>
-        description: | # this will include new lines to allow paragraphs
-          **100% automation** of analysis reports and malware collection of major attack groups released by security vendors
+          <span style="font-size:125%">Aug 2022 - Sep 2022 (2 months) / Response Team</span>
+        description:
+          Methodology development and guide document creation to enhance project execution capabilities for the response team
+          - Organized step-by-step processes for service and development tasks and created 10 custom templates
+          - Used as team training materials for project management
 
-          Used Skills    
+          Used Skills
+          <mark>Jira</mark>, <mark>Confluence</mark>, <mark>Waterfall</mark>, <mark>SW Engineering</mark>
+
+      - layout: top-middle
+        title: Building an Automatic Malicious Indicator Collection Platform (vx-underground)
+        caption:
+          Project Leader and Data Engineer (1 in total) / Responsible for planning, design, implementation, development, and operations
+        quote:
+          <span style="font-size:125%">May 2022 - Nov 2022 (8 months) / Response Team</span>
+        description:
+          Built and documented an automatic data collection system for external data using Python and AirFlow
+          - Automatically collected malware and report files published on vx-underground
+          - Developed crawlers and downloaders, and created an automated execution environment using AirFlow
+          - Applied the same architecture to crawl RansomDB statistical information
+
+          Used Skills
           <mark>AirFlow</mark>, <mark>PostgreSQL</mark>, <mark>MinIO</mark>, <mark>Docker</mark>, <mark>Python</mark>
 
       - layout: top-middle
-        title: Leading the construction of SW development environments for incubation of automation development
+        title: Building the Basic Research and Development Environment for the Response Team (Python, Docker, Scala)
         caption:
-          Project Leader and Data Engineer
+          Project Leader and Data Engineer (1 in total) / Responsible for planning, design, implementation, development, and operations
         quote: >
-          <span style="font-size:125%">Oct 2021 - Jan 2022, July 2023 - Aug 2023 (6 months) / Response Team</span>
+          <span style="font-size:125%">Oct 2021 - Jan 2022, Jul 2023 - Aug 2023 (Total 6 months) / Response Team</span>
         description: | # this will include new lines to allow paragraphs
-          Apply **history management** and **integrated output management** by configuring a standard environment and establishing processes
+          Provided **standard development environment** for non-development departments' development projects
+          - Built **configuration management, build, and deployment** environment based on software engineering principles
+          - Set up Docker-based GitLab, Jenkins, Nexus, and configured Docker, Python, and Scala build agents
+          - Minimized trial and error by documenting **review procedures** and usage instructions
+          - Applied **version control** to the code and deliverables used in the work
 
-          Used Skills    
+          Used Skills
           <mark>GitLab</mark>, <mark>Jenkins</mark>, <mark>Nexus</mark>, <mark>Docker</mark>, <mark>VirtualBox</mark>, <mark>Python</mark>, <mark>VSCode</mark>, <mark>Scala</mark>, <mark>sbt</mark>, <mark>IntelliJ</mark>, <mark>SW Engineering</mark>
 
       - layout: top-middle
-        title: Participating in the development of AI-based phishing URL and email detection technology
+        title: Development of AI-based Phishing URL and Email Detection Technology
         caption:
-          Data Engineer
+          Data Engineer (Total 8) / Responsible for developing eml file labeling model
         quote: >
           <span style="font-size:125%">May 2020 - Jan 2021 (9 months) / AI Team</span>
         description: | # this will include new lines to allow paragraphs
-          Data conversion, ETL, label creation, and direct analysis of over **6,000 original email** files
-          
-          Used Skills    
+          Detailed analysis of original phishing emails (eml) **over 6,000** for misclassification analysis
+          - Designed phishing email eml data and built pipelines
+          - Conducted labeling model experiments and misclassification analysis using Snorkel and PySpark
+          - The phishing email detection model was integrated into the threat pre-detection product's MTA module
+
+          Used Skills
           <mark>Spark</mark>, <mark>PySpark</mark>, <mark>AirFlow</mark>, <mark>MinIO</mark>, <mark>PostgreSQL</mark>, <mark>Scala</mark>, <mark>Python</mark>, <mark>Jupyter</mark>, <mark>Snorkel</mark>, <mark>Pandas</mark>, <mark>Linux</mark>, <mark>PyCharm</mark>, <mark>VSCode</mark>, <mark>Malware Analysis</mark>, <mark>Jira</mark>, <mark>Confluence</mark>
 
       - layout: top-middle
-        title: Participating in building and developing a data ETL pipeline for AI model development
+        title: Development of Malware Detection Technology Based on Graph DB (w. Bitnine)
         caption:
-          Data Engineer
+          Data Engineer (Total 4) / Responsible for data modeling and graph DB data validation
         quote: >
-          <span style="font-size:125%">May 2020 - Jan 2021 (9 months) / AI Team</span>
+          <span style="font-size:125%">Oct 2018 - Dec 2018.12 (3 months) / AI Team</span>
         description: | # this will include new lines to allow paragraphs
-          70% reduction in processing time for 15 billion behavioral data for month <br> 
-          50% improvement in integrated performance of analysis event data for 7 billion files
-          
-          Used Skiils    
+          Performed data modeling and validation for graph analysis of behavior data collected from user devices
+          - **Graph data modeling** and data transformation of behavior data
+          - Validated query capability of created graph data for intrusion scenario analysis
+          - Managed Jira and Confluence on a cloud platform for collaboration with external vendors
+
+          Used Skills
+          <mark>Spark</mark>, <mark>Hadoop</mark>, <mark>PostgreSQL</mark>, <mark>AgensGraph</mark>, <mark>CipherQL</mark>, <mark>Zeppelin</mark>, <mark>Jupyter</mark>, <mark>Bitbucket</mark>, <mark>Bamboo</mark>, <mark>Jira</mark>, <mark>Confluence</mark>, <mark>Graph Modeling</mark>, <mark>Agile</mark>, <mark>Open Innovation</mark>
+
+      - layout: top-middle
+        title: Establishment of Source Data Acquisition and Management System for AI Technology R&D
+        caption:
+          Data Engineer (Total 8) / Responsible for Spark Application and AirFlow ETL pipeline development
+        quote: >
+          <span style="font-size:125%">Mar 2018 - Apr 2019, May 2019 - Apr 2020 (2 years 2 months) / AI Team</span>
+        description: | # this will include new lines to allow paragraphs
+          Achieved **over 60% performance improvement** through the development and optimization of Spark and AirFlow-based ETL pipelines
+          - Optimized RDD implementation and tuning for processing **15 billion behavior data entries** monthly, reducing processing time by 70%
+          - Improved performance by 50% for updating labels through Kafka events analyzing **7 billion files**
+          - Integrated distributed data for MSA features for the first time within the company
+          - Generated data was used for model training and integrated into **V3, MDS, EDR products**
+          - Gained cloud-based data processing automation experience using AWS EMR and S3
+
+          Used Skills
           <mark>Spark</mark>, <mark>Hadoop</mark>, <mark>AirFlow</mark>, <mark>Livy</mark>, <mark>Ambari</mark>, <mark>AWS EMR</mark>, <mark>Zeppelin</mark>, <mark>Jupyter</mark>, <mark>AWS S3</mark>, <mark>MinIO</mark>, <mark>IntelliJ</mark>, <mark>VSCode</mark>, <mark>Bitbucket</mark>, <mark>Bamboo</mark>, <mark>Artifactory</mark>, <mark>Scala</mark>, <mark>sbt</mark>, <mark>Python</mark>, <mark>Docker</mark>, <mark>Linux</mark>, <mark>Agile</mark>, <mark>SW Engineering</mark>, <mark>Test-driven (Unit Test)</mark>, <mark>Architecture</mark>, <mark>Data Modeling</mark>, <mark>Jira</mark>, <mark>Confluence</mark>
 
   - title: Skill # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title:  
+        title: 
         description: | # this will include new lines to allow paragraphs
           These are tools that have been used or are currently being used in actual work.
       - layout: left
@@ -187,7 +276,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           - <mark>Spark</mark>, <mark>PySpark</mark>, <mark>Hadoop</mark>, <mark>AWS EMR</mark>
           - <mark>HDFS</mark>, <mark>MinIO</mark>, <mark>AWS S3</mark>
-          - <mark>AirFlow</mark>, <mark>Livy</mark>
+          - <mark>AirFlow</mark>, <mark>Livy</mark>, <mark>Zeppelin</mark>
           - <mark>Ambari</mark>, <mark>Bigtop</mark>
           - <mark>PostgreSQL</mark>
       - layout: left
@@ -196,7 +285,7 @@ content:
           - <mark>GitLab</mark>, <mark>BitBucket</mark>
           - <mark>Jenkins</mark>, <mark>Bamboo</mark>
           - <mark>Nexus</mark>, <mark>Artifactory</mark>
-          - <mark>Scala (Spark)</mark>, <mark>Python</mark>
+          - <mark>Scala (Spark)</mark>, <mark>Python</mark>, <mark>Java</mark>, <mark>JavaScript</mark>
       - layout: left
         title: Tool
         description: | # this will include new lines to allow paragraphs
@@ -206,6 +295,7 @@ content:
           - <mark>Snorkel</mark>, <mark>Pandas</mark>, <mark>Selenium</mark>, <mark>BeautifulSoup</mark>
           - <mark>Jira</mark>, <mark>Confluence</mark>
           - <mark>AgensGraph</mark>, <mark>CipherQL</mark>
+          - <mark>SpringBoot</mark>, <mark>Vue.js 3</mark>
       - layout: left
         title: Methodology
         description: | # this will include new lines to allow paragraphs
@@ -249,7 +339,7 @@ content:
         title: Regular
         description: | # this will include new lines to allow paragraphs
           - Mar 2006 – Feb 2011 : M.S. in Computer Science, Yonsei University Graduate School (Visual Communication)
-            * Mar 2006 - Feb 2009 : Leave of absence due to military service 
+            * Mar 2006 - Feb 2009 : Leave of absence due to military service
           - Mar 2002 – Feb 2006 : B.A. in Computer Engineering, Yonsei University Wonju Campus
           - Mar 1999 – Feb 2002 : Graduated Wonju High Scool
 
@@ -261,12 +351,118 @@ content:
           - Mar 13 2018 - Mar 20 2018 :Exploratory Data Analysis (Coursera)
 
       - layout: left
+        title: Backend Development
+        description: | # this will include new lines to allow paragraphs
+            - Dec 19 2023 - Jan 8 2024 : Introduction to Java by Kim Young-han (Java First Steps with Code) - Inflearn
+            - Jan 9 2024 - Jan 16 2024 : Practical Java by Kim Young-han (Basics) - Inflearn
+            - Jan 17 2024 - Jan 22 2024 : Introduction to Spring (Learning Spring Boot, Web MVC, DB Access Techniques with Code) - Inflearn
+            - Jan 23 2024 - Feb 15 2024 : Core Principles of Spring (Basics) - Inflearn
+            - Feb 20 2024 - Mar 7 2024 : Java ORM Standard JPA Programming (Basics) - Inflearn
+            - Mar 7 2024 - Mar 11 2024 : Basic HTTP Web Knowledge for All Developers - Inflearn
+            - Mar 12 2024 - Apr 20 2024 : Spring MVC Part 1 - Core Web Development Techniques - Inflearn
+            - Apr 20 2024 - May 3 2024 : Spring MVC Part 2 - Practical Web Development Techniques - Inflearn
+            - Jan 2 2025 - Present : Spring DB Part 1 - Core Principles of Data Access - Inflearn
+
+      - layout: left
         title: Incident Analysis and Response
         description: | # this will include new lines to allow paragraphs
             - Jun 21 2021 - Jun 25 2021 : From introduction to use of Windows application vulnerability analysis - Inflearn
             - Apr 23 2021 - Apr 28 2021 : Malware analysis intermediate course (analysis by type) - Inflearn
             - Apr 15 2021 - Apr 23 2021 : Introduction to Windows malware analysis course - Inflearn
             - Nov 12 2012 - Nov 16 2012 : (Skill-up) DDoS, reverse engineering, and incident analysis process (KISA)
+
+  - title: Communications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Personal Blog
+        link: https://www.bearpooh.com
+        link_text: www.bearpooh.com
+        description: | # this will include new lines to allow paragraphs
+          ## **곰탱푸닷컴 ([https://www.bearpooh.com](https://www.bearpooh.com))**
+          - A personal blog where I share research, building, operation, integration methods, troubleshooting, etc., related to big data and intelligence technologies.
+          - Average daily page views (PV) of 1,000 ~ 1,300, monthly active users (MAU) of 17,000, monthly PV of 25,000.
+          - Over 52 million cumulative PV from 200+ technical posts in the last 2 years (as of September 2023).
+
+      - layout: top-middle
+        title: Presentations
+        description: | # this will include new lines to allow paragraphs
+          ## **Data Engineering**
+          - N/A
+
+          ## **Incident Response**
+          - Sep 24 / Oct 12 / Jul 24 / Sep 18 2023 : Cybersecurity Training Center Incident Trends Lecture (Key Security Threats in 2023 from Past Incidents / Daejeon)
+          - Jun 13 / Jul 18 / Oct 17 / Nov 28 2022 : Cybersecurity Training Center Incident Trends Lecture (Recent Incident Trends with Case Studies / Daejeon)
+          - Oct 20 2017 : Korea Defense Industry Association Malware Analysis Training
+          - Sep 21 2017 : Seoul Women's University Information Security Course "Introduction to Analysis Tools"
+          - Jun 13 / Jun 27 2017 : AhnLab ISF SQUARE 2017 Security Trends Presentation (Ongoing Information Security Threats / Seoul, Daejeon)
+          - Apr 25 : Icheon City Hall Employee Information Security Training (Information Security is Not Difficult - Threat Trends and Countermeasures)
+          - Apr 22 / Aug 04 / Sep 09 2017 : Seoul Women's University Information Security Gifted Education Center Security Training (Malware Overview and Safe PC Usage)
+          - Oct 27 2016 : Samsung Dream Center AhnLab Tour Malware Trend Presentation (Ongoing Ransomware Threats and Countermeasures)
+          - Jun 21 2016 : AhnLab ISF SQUARE 2016 in Daejeon Ransomware Trend Presentation (Security Trends Seen Through Ransomware)
+          - Apr 23 / Jul 09 / Sep 24 2016 : Seoul Women's University Information Security Gifted Education Center Security Training (Malware Overview and Safe PC Usage)
+          - Jan 11 2016 : Seoul Women's University Information Security Women’s Workforce Development Camp Special Lecture (Recent Malware Trends and Countermeasures)
+          - Oct 20 / Oct 27 2015 : AhnLab EP Technical Support Department Malware Analysis Lecture
+          - Aug 27 2015 : AhnLab ISF SQUARE 2015 in Jeonju Security Trends Presentation (Recent Malware Trends and Countermeasures / Jeonju, HeadIT)
+          - Feb 03 2015 : Yeongnam University Computer Science Department Visit Event Presentation (Hiring Process and Recent Security Trends)
+          - Dec 10 2014 : Gyeonggi-do Information and Computer Subject Research Association (Our Stance on Online Banking Incidents)
+          - Oct 18 / Nov 01 / Nov 15 / Dec 13 2014 : Seoul Women's University Information Security Gifted Education Center Security Training (Malware Overview and Safe PC Usage)
+          - Sep 19 2014 : AhnLab Partner Security Training (Malware Trends)
+          - Sep 11 2014 : Sogang University Graduate School of Information and Communication Security Training (Hacking and Incident Response Overview - Incident Cases, Security Trends)
+          - Jun 27 2014 : SBS Seoul Broadcasting Employees Information Security Training (Security Trends and Incident Analysis)
+          - May 22 2014 : Goyang Foreign Language High School Company Tour Security Special Lecture
+          - Apr 28 2014 : Yonsei University Computer Information and Communication Engineering Career Special Lecture
+          - Apr 16 2014 : Hanyang University Graduate School Information Security Training (Security Trends and Incident Analysis)
+          - Apr 16 2014 : Sogang University Graduate School of Information and Communication Security Training (Hacking and Incident Response Overview - Incident Cases, Security Trends)
+          - Mar 10 / Mar 13 2014 : AhnLab Security Service Department Intern Training (Security Trends and Incident Analysis)
+          - Mar 05 2014 : Sogang University Graduate School of Information and Communication (Malware and Vulnerability Analysis - Security Threat Elements, Trends)
+          - Feb 25 2014 : Yonsei University Graduate School Department of Computer Science BK21 Workshop Seminar Special Lecture
+          - Oct 18 2013 : Science and Engineering High School Company Tour Career Special Lecture (A Day in the Life of a Security Expert)
+          - Sep 05 2013 : Sogang University Graduate School of Information and Communication Security Training (Hacking and Incident Response Overview - Incident Cases, Security Trends)
+          - Jun 25 ~ 28 2013 : Korea Securities Depository Information Security Training (Malware Analysis Methods)
+          - Mar 13 2013 : Sogang University Graduate School of Information and Communication Security Special Lecture (Cyber Security in Everyday Life Through the Drama Ghost)
+          - Mar 12 2013 : AhnLab Security Service Department Intern Training (Security Trends and Incident Analysis)
+          - Feb 27 2013 : Ahn Cheol-Soo Foundation Information Security Special Lecture (Safe PC Usage)
+          - Dec 18 2012 : Science and Engineering High School Company Tour Career Special Lecture (A Day in the Life of a Security Expert)
+          - Nov 08 2012 : Pyeongchon High School Company Tour Information Security Special Lecture (Cyber Security in Everyday Life Through the Drama Ghost)
+          - Oct 09 2012 : AhnLab Security Service Department Intern Training (Incident Analysis Using Ahn Reports)
+          - Jul 26 2012 : Pohang University of Science and Technology Faculty Information Security Special Lecture (Cyber Security in Everyday Life Through the Drama Ghost)
+
+      - layout: top-middle
+        title: Open Source
+        description: | # this will include new lines to allow paragraphs
+          - N/A
+
+      - layout: top-middle
+        title: Interview
+        description: | # this will include new lines to allow paragraphs
+          - Dec 18 2014 : Maeil Business Newspaper AhnLab Premium Employee [Interview](https://www.mk.co.kr/premium/print/8724/)
+          - Sep 13 2013 : AhnLab 2013 Fall Recruitment Promotional Video [Interview](https://www.youtube.com/watch?app=desktop&v=KFY3u3N830I)
+          - Jan 11 2011 : AhnLab Security World, [Interview on Most Impressive Interview Question by New Employees](https://blogsabo.ahnlab.com/601)
+
+      - layout: top-middle
+        title: Article
+        description: | # this will include new lines to allow paragraphs
+          ## **Data Engineering**
+          - N/A
+
+          ## **Incident Response**
+          - Sep 06 2017 : AhnLab Security Letter No. 689, [PC Boot Failure Ransomware, Attacker's Mistake or Warning?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26769)
+          - Jul 13 2017 : AhnLab Security Letter No. 681, [A New Unknown Shifr Ransomware... Caution!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26611)
+          - Jul 03 2017 : Monthly 安, [Dissecting the Ransomware Storm That Swept the First Half of 2017](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26558)
+          - Feb 07 2017 : Monthly 安, [Ransomware Targeting Critical Infrastructure, How Has It Changed?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26047)
+          - Feb 06 2017 : Ransomware Response Center, [Ransomware Targeting Critical Infrastructure, How Has It Changed?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=26047)
+          - Jan 02 2017 : Monthly 安, [Bitter and Meticulous: New Security Threats in 2017](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25907)
+          - Dec 05 2016 : Monthly 安, [Security Threats of 2016, Evolving Amid Survival of the Fittest!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25780)
+          - Nov 03 2016 : AhnLab Security Letter No. 646, [Ransomware, Targeting the U.S. Elections?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25658)
+          - Oct 13 2016 : AhnLab Security Letter No. 643, [Ransomware Inspired by 'Mid'?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25577)
+          - Aug 02 2016 : Monthly 安, [The Keyword of the First Half of 2016: Ransomware and Targeted Attacks! What's Next in the Second Half?](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25300)
+          - Jul 13 2016 : AhnLab Security Letter No. 631, [The Return of the Rocky Ransomware... Be Cautious!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25228)
+          - Jul 07 2016 : AhnLab Security Letter No. 630, [Ransomware Also Says "Show Me the Money"?!](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25208)
+          - Jul 04 2016 : Monthly 安, [Ransomware Also Says “$how me the MONEY!”](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=25198)
+          - Mar 25 2016 : AhnLab Press Release, [Locky Ransomware Variant Victim Prevention 'User Precautions'](https://blog.ahnlab.com/1887) (Original Article)
+          - Oct 08 2015 : AhnLab Security Letter No. 593, [Privacy Exposure in Daily Life, Unnoticed](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=24136)
+
 
   - title: ETC # Title for the section
     layout: list # Type of content section (list/text)
@@ -275,7 +471,11 @@ content:
         title: Military Service
         description: | # this will include new lines to allow paragraphs
           - Aug 07 2014 : Promoted to a Reserve Captain, ROK Army (Reserve Officer Promotion System)
-          - Mar 01 2006 - Jun 30 2008 : Discharged as a First Lieutenant, ROK Army (ROTC 44th)
+          - Sep 05 2013 : Award for Contribution to the 3879th Unit, 3rd Battalion Mobilization Training (Seongnam Mayor's Citation) - No. 1623
+          - Jun 30 2008 : Discharge as a Second Lieutenant in the Republic of Korea Army
+          - Dec 11 2007 : Award for Contribution to the 2007 National Defense Training (3323rd Unit Commander - Battalion Commander Citation)
+          - Jun 19 2007 : Award for Contribution to the 2007 Garrison Defense Training (1st Army Headquarters Command - Regiment Commander Citation)
+          - Mar 01 2006 : Commissioned as a Second Lieutenant in the Republic of Korea Army (ROTC Class 44, Yonsei University 1071 Military Corps)
 
       - layout: top-middle
         title: Architecture
